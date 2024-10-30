@@ -34,16 +34,14 @@ const Login = () => {
   return (
     <>
       <ToastContainer />
-      <div className='vh-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'rgb(43, 43, 82)' }}>
+      <div className='vh-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: '' }}>
         <div style={{ backgroundColor: 'white', padding: '1.5rem', borderRadius: '0.5rem', display: 'flex', alignItems: 'center', width: '50%' }}>
           <Row className='w-100'>
             <Col md={6} className="d-flex flex-column p-5 align-items-center text-center text-white" style={{ backgroundColor: 'rgb(43, 43, 82)', height: '500px' }}>
               <Image src="Ellipse 4.png" className="rounded-circle h-10 w-10" alt="" />
               <div>
                 <p className='mt-5 fw-bold fs-3'>LOGIN</p>
-                <Button className="bg-light" variant="secondary" style={{ marginTop: "120px" }}>
-                  <span className='text-dark fw-bold fs-6'>SIGN UP</span>
-                </Button>
+               
               </div>
             </Col>
             <Col md={6} className='d-flex justify-content-center align-items-center'>
@@ -59,7 +57,7 @@ const Login = () => {
                           placeholder='User Name'
                           autoComplete="username"
                           required
-                          className="block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          className="form-control w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           onChange={handleChange}
                         />
                       </div>
@@ -74,7 +72,7 @@ const Login = () => {
                           placeholder='Password'
                           autoComplete="current-password"
                           required
-                          className="block w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          className="form-control w-full rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           onChange={handleChange}
                         />
                       </div>
