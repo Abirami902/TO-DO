@@ -4,6 +4,7 @@ import { Form, Button, Image, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 const RegisterI = () => {
   const [intern, setIntern] = useState({ });
@@ -79,7 +80,10 @@ const RegisterI = () => {
                   style={{ marginTop: '100px', width: '150px' }}
                   onClick={handleSubmit}
                 >
-                  <span className="text-dark fw-bold fs-6">LOG IN</span>
+               <Link to="/signin" className="login-link" aria-label="Log in">
+    <span className="text-dark fw-bold fs-6">LOG IN</span>
+</Link>
+
                 </Button>
               </div>
             </Col>
